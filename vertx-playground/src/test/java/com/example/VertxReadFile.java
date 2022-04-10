@@ -9,16 +9,15 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class VertxReadFile {
 
-  public static void main(String[] args) {
-    Vertx.vertx()
-        .fileSystem()
-        .readFile("README.md", new Handler<AsyncResult<Buffer>>() {
-          @Override
-          public void handle(AsyncResult<Buffer> event) {
-            log.info("read file content: {}", event.result().toString());
-          }
-        });
-  }
-
+    public static void main(String[] args) {
+        Vertx.vertx()
+            .fileSystem()
+            .readFile("README.md", new Handler<AsyncResult<Buffer>>() {
+                @Override
+                public void handle(AsyncResult<Buffer> event) {
+                    log.info("read file content: {}", event.result().toString());
+                }
+            });
+    }
 
 }
