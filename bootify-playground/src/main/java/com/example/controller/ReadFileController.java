@@ -49,7 +49,7 @@ public class ReadFileController {
             });
     }
 
-    private void readFileAsync(String path, Consumer<String> successHandler, Consumer<Throwable> errorHandler) throws IOException {
+    public static void readFileAsync(String path, Consumer<String> successHandler, Consumer<Throwable> errorHandler) throws IOException {
         new Thread(new Runnable() {
             @Override
             public void run() {
