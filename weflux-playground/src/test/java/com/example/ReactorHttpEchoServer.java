@@ -11,10 +11,10 @@ import java.io.IOException;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
 
-public class WebfluxHttpEchoServer {
+public class ReactorHttpEchoServer {
 
     public static void main(String[] args) throws IOException {
-        new WebfluxHttpEchoServer().start();
+        new ReactorHttpEchoServer().start();
     }
 
     public void start() throws IOException {

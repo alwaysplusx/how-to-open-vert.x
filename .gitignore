@@ -141,6 +141,7 @@ Temporary Items
 .apdisk
 
 ### Maven ###
+**/target
 vertx-playground/target/
 pom.xml.tag
 pom.xml.releaseBackup
