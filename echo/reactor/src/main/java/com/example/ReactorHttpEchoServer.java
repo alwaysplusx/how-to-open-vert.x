@@ -26,7 +26,7 @@ public class ReactorHttpEchoServer {
                     return resp.sendString(Mono.just("Hello from reactor!"));
                 }
             })
-            .port(9999).bind()
+            .port(9000).bind()
             .doOnNext(new Consumer<DisposableServer>() {
                 @Override
                 public void accept(DisposableServer disposableServer) {

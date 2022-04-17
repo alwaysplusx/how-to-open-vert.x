@@ -17,7 +17,7 @@ public class HttpEchoApplication {
     }
 
     @ResponseBody
-    @GetMapping(path = "/echo", produces = MediaType.TEXT_PLAIN_VALUE)
+    @GetMapping(path = {"", "/", "/echo"}, produces = MediaType.TEXT_PLAIN_VALUE)
     public Mono<String> echo() {
         return Mono.just("Hello from webflux!");
     }

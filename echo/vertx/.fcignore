@@ -1,0 +1,12 @@
+src
+
+target/classes
+target/generated-sources
+target/maven-archiver
+target/maven-status
+target/*.jar.original
+target/vertx-echo-1.0.0-SNAPSHOT.jar
+
+pom.xml
+.fcignore
+*.iml

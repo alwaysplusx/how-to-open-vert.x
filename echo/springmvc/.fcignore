@@ -1,0 +1,11 @@
+src
+
+target/classes
+target/generated-sources
+target/maven-archiver
+target/maven-status
+target/*.jar.original
+
+pom.xml
+.fcignore
+*.iml

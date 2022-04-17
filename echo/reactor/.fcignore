@@ -1,0 +1,12 @@
+src
+
+target/classes
+target/generated-sources
+target/maven-archiver
+target/maven-status
+target/*.jar.original
+target/reactor-echo-0.0.1-SNAPSHOT.jar
+
+pom.xml
+.fcignore
+*.iml
