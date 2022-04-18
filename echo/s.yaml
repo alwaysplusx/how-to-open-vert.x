@@ -9,142 +9,142 @@ vars:
     description: 'Serverless Devs Web Framework Service'
 
 services:
-#  webflux:
-#    component: fc
-#    actions:
-#      pre-deploy:
-#        - run: mvn clean package -DskipTests
-#          path: ./webflux
-#    props:
-#      region: ${vars.region}
-#      service: ${vars.service}
-#      function:
-#        name: webflux
-#        description: 'Webflux HttpEchoServer'
-#        codeUri: ./webflux
-#        memorySize: 128
-#        timeout: 30
-#        runtime: custom
-#        customRuntimeConfig:
-#          command:
-#            - java
-#          args:
-#            - '-jar'
-#            - 'target/webflux-echo-0.0.1-SNAPSHOT.jar'
-#      triggers:
-#        - name: httpTrigger
-#          type: http
-#          config:
-#            authType: anonymous
-#            methods:
-#              - GET
-#      customDomains:
-#        - domainName: auto
-#          protocol: HTTP
-#          routeConfigs:
-#            - path: /*
-#  reactor:
-#    component: fc
-#    actions:
-#      pre-deploy:
-#        - run: mvn clean package -DskipTests
-#          path: ./reactor
-#    props:
-#      region: ${vars.region}
-#      service: ${vars.service}
-#      function:
-#        name: reactor
-#        description: 'Reactor HttpEchoServer'
-#        codeUri: ./reactor
-#        memorySize: 128
-#        timeout: 30
-#        runtime: custom
-#        customRuntimeConfig:
-#          command:
-#            - java
-#          args:
-#            - '-jar'
-#            - 'target/reactor-echo-0.0.1-SNAPSHOT-jar-with-dependencies.jar'
-#      triggers:
-#        - name: httpTrigger
-#          type: http
-#          config:
-#            authType: anonymous
-#            methods:
-#              - GET
-#      customDomains:
-#        - domainName: auto
-#          protocol: HTTP
-#          routeConfigs:
-#            - path: /*
-#  springmvc:
-#    component: fc
-#    actions:
-#      pre-deploy:
-#        - run: mvn clean package -DskipTests
-#          path: ./springmvc
-#    props:
-#      region: ${vars.region}
-#      service: ${vars.service}
-#      function:
-#        name: springmvc
-#        description: 'Spring MVC HttpEchoServer'
-#        codeUri: ./springmvc
-#        memorySize: 128
-#        timeout: 30
-#        runtime: custom
-#        customRuntimeConfig:
-#          command:
-#            - java
-#          args:
-#            - '-jar'
-#            - 'target/springmvc-echo-0.0.1-SNAPSHOT.jar'
-#      triggers:
-#        - name: httpTrigger
-#          type: http
-#          config:
-#            authType: anonymous
-#            methods:
-#              - GET
-#      customDomains:
-#        - domainName: auto
-#          protocol: HTTP
-#          routeConfigs:
-#            - path: /*
-#  vertx:
-#    component: fc
-#    actions:
-#      pre-deploy:
-#        - run: mvn clean package -DskipTests
-#          path: ./vertx
-#    props:
-#      region: ${vars.region}
-#      service: ${vars.service}
-#      function:
-#        name: vertx
-#        description: 'Vertx HttpEchoServer'
-#        codeUri: ./vertx
-#        memorySize: 128
-#        timeout: 30
-#        runtime: custom
-#        customRuntimeConfig:
-#          command:
-#            - java
-#          args:
-#            - '-jar'
-#            - 'target/vertx-echo-1.0.0-SNAPSHOT-fat.jar'
-#      triggers:
-#        - name: httpTrigger
-#          type: http
-#          config:
-#            authType: anonymous
-#            methods:
-#              - GET
-#      customDomains:
-#        - domainName: auto
-#          protocol: HTTP
-#          routeConfigs:
-#            - path: /*
+  webflux:
+    component: fc
+    actions:
+      pre-deploy:
+        - run: mvn clean package -DskipTests
+          path: ./webflux
+    props:
+      region: ${vars.region}
+      service: ${vars.service}
+      function:
+        name: webflux
+        description: 'Webflux HttpEchoServer'
+        codeUri: ./webflux
+        memorySize: 128
+        timeout: 30
+        runtime: custom
+        customRuntimeConfig:
+          command:
+            - java
+          args:
+            - '-jar'
+            - 'target/webflux-echo-0.0.1-SNAPSHOT.jar'
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*
+  reactor:
+    component: fc
+    actions:
+      pre-deploy:
+        - run: mvn clean package -DskipTests
+          path: ./reactor
+    props:
+      region: ${vars.region}
+      service: ${vars.service}
+      function:
+        name: reactor
+        description: 'Reactor HttpEchoServer'
+        codeUri: ./reactor
+        memorySize: 128
+        timeout: 30
+        runtime: custom
+        customRuntimeConfig:
+          command:
+            - java
+          args:
+            - '-jar'
+            - 'target/reactor-echo-0.0.1-SNAPSHOT-jar-with-dependencies.jar'
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*
+  springmvc:
+    component: fc
+    actions:
+      pre-deploy:
+        - run: mvn clean package -DskipTests
+          path: ./springmvc
+    props:
+      region: ${vars.region}
+      service: ${vars.service}
+      function:
+        name: springmvc
+        description: 'Spring MVC HttpEchoServer'
+        codeUri: ./springmvc
+        memorySize: 128
+        timeout: 30
+        runtime: custom
+        customRuntimeConfig:
+          command:
+            - java
+          args:
+            - '-jar'
+            - 'target/springmvc-echo-0.0.1-SNAPSHOT.jar'
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*
+  vertx:
+    component: fc
+    actions:
+      pre-deploy:
+        - run: mvn clean package -DskipTests
+          path: ./vertx
+    props:
+      region: ${vars.region}
+      service: ${vars.service}
+      function:
+        name: vertx
+        description: 'Vertx HttpEchoServer'
+        codeUri: ./vertx
+        memorySize: 128
+        timeout: 30
+        runtime: custom
+        customRuntimeConfig:
+          command:
+            - java
+          args:
+            - '-jar'
+            - 'target/vertx-echo-1.0.0-SNAPSHOT-fat.jar'
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*
   stdfc:
     component: fc
     actions:
